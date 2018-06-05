@@ -10,7 +10,6 @@ def prime?(int)
   while i < range.length
     if int % range[i] == 0
       return false
-    else
+    end
       return true
-
 end
