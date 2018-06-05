@@ -1,9 +1,8 @@
 def prime?(int)
 return true if int == 2..3
+
+return false if int <= 1
     
-  elsif int <= 1
-    return false
-  end
 
   return false if int.even?
 
