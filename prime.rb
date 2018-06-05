@@ -1,6 +1,6 @@
 def prime?(int)
-  if int == 2..3
-    return true
+return true if int == 2..3
+    
   elsif int <= 1
     return false
   end
