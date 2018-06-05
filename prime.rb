@@ -4,8 +4,13 @@ def prime?(int)
   elsif int <= 1
     return false
   end
-
-# range = (3...(int/2).round).to_a
   return false if int.even?
+  range = (3..(int/2).round).to_a
+  i = 0
+  while i < range.length
+    if int % range[i] == 0
+      return false
+    else
+      return true
 
 end
