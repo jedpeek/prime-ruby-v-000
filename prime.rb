@@ -6,12 +6,13 @@ def prime?(int)
   end
 
   return false if int.even?
-  
+
   range = (3..(int/2).round).to_a
   i = 0
   while i < range.length
     if int % range[i] == 0
       return false
     end
+    i += 1
       return true
 end
